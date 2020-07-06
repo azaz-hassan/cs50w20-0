@@ -7,8 +7,9 @@ body{
 }
 
 input[type=text]:hover{
+    font-family: Arial;
     border-color: grey;
-    color: grey;
+    color: black;
     transition: .7s;
     outline: none;
     box-shadow: 0 0 4px 0 grey;
