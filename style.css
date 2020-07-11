@@ -1,0 +1,158 @@
+body{
+    width: 99%;
+}
+
+.icon{
+    position: relative;
+}
+
+
+input[type=text]:hover{
+    font-family: Arial;
+    border-color: grey;
+    color: black;
+    transition: .7s;
+    outline: none;
+    box-shadow: 0 0 4px 0 grey;
+}
+
+
+
+.icon i{
+    position: absolute;
+    top: 22px;
+    width: 10%;
+    color: #999999;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #999999;
+}
+.box{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+.box .text{
+    font-family: Arial;
+    font-size: 17px;
+    color: #678cab;
+    position: absolute;
+    left: 59%;
+    top: 20%%; /* Adjust this value to move the positioned div up and down */
+    bottom: 5%;
+    width: 60%; /* Set the width of the positioned div */
+}
+
+
+.advan-div{
+    padding-top: 20%;
+    font-size: 20px;
+    padding-left: 20%;
+}
+
+.simple-div{
+    padding-top: 20%;
+    font-size: 20px;
+    padding-left: 20%
+}
+
+.image-div{
+    padding-top: 20%;
+    padding-left: 15%;
+    font-size: 20px;
+}
+.item1 {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 81% 7% 7% 5%;
+}
+.item1 img{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 75%;
+    border-radius: 50%;
+}
+.item2 {
+    grid-area: menu;
+}
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 {
+    grid-area: footer;
+}
+
+input{
+    margin: 15px;
+}
+
+
+
+input[type=text]{
+    border:1px solid #eaeaea;
+    width: 60%;
+    border-radius: 30px;
+    background-image: url(search.png);
+    background-position: 9px 10px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline:none;
+}
+
+input[type=submit]{
+    height: 30px;
+    width: 15%;
+    border-radius: 3px;
+    margin: 5px;
+    color: grey;
+    border:1px solid #eaeaea;
+}
+
+.country{
+    text-align: justify;
+    font-size: 20px;
+    color: grey;
+    margin: 2px;
+    padding: 5px;
+}
+
+.country>a{
+    color: grey;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+
+
+.item5{
+    margin-top: 8px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main main right'
+    '..... main main main main main .....'
+    /* '..... ..... ..... ..... ..... ..... .....' */
+    'footer footer footer footer footer footer footer';
+  grid-gap: 58px;
+  /* background: blue; */
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
